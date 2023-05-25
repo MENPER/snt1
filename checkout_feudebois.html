@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resumé</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #222;
+      border-radius: 5px;
+    }
+    
+    .product {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    
+    .product span {
+      font-weight: bold;
+    }
+    
+    .checkout-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    
+    .quantity-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .quantity-section input[type="number"] {
+      width: 50px;
+    }
+    
+    .shipping-section {
+      margin-top: 20px;
+    }
+    
+    .shipping-section label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .shipping-section input[type="text"],
+    .shipping-section input[type="email"],
+    .shipping-section textarea {
+      width: 100%;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Résumé de la commande</h1>
+    
+    <div class="product">
+      <span>Produits:</span>
+      <span>Album Feu de Bois</span>
+    </div>
+    
+    <div class="product">
+      <span>Prix:</span>
+      <span>$180.99</span>
+    </div>
+    
+    <div class="quantity-section">
+      <span>Quantité:</span>
+      <input type="number" value="1" min="1">
+    </div>
+    
+    <div class="product">
+      <span>Total: $180.99</span>
+      <span id="totalPrice"></span>
+    </div>
+    
+    <div class="shipping-section">
+      <h3>Information de livraison </h3>
+      <label for="name">Nom:</label>
+      <input type="text" id="name" placeholder="Entrez votre nom">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Entrez votre Email">
+      
+      <label for="address">Addresse:</label>
+      <textarea id="address" rows="3" placeholder="Entrez votre Adresse"></textarea>
+    </div>
+    
+    <a href="#" class="checkout-button">Continuez vers la banque</a>
+  </div>
+
+ 
